@@ -2,6 +2,7 @@
 import os
 import csv
 
+# Path 
 csvpath = os.path.join("Resources","election_data.csv")
 Ap = os.path.join("Analysis","Results.txt")
 
@@ -44,7 +45,7 @@ print("-------------------------")
 print(f"Winner: {winner}")
 print("-------------------------")
 
-
+# Print to a txt file
 with open(Ap, 'w' )as txtfile:
     txtfile.write("Election Results\n")
     txtfile.write("-------------------------\n")

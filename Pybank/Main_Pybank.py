@@ -2,6 +2,7 @@
 import os
 import csv
 
+# Path
 csvpath = os.path.join("Resources","budget_data.csv")
 Ap = os.path.join("Analysis","Results.txt")
 
@@ -17,7 +18,7 @@ with open(csvpath, 'r') as csvfile:
     csvreader = csv.reader(csvfile)
     next(csvreader)  # Skip the header row
 
-    for row in csvreader:
+    for row in csvreader: # Input the rows
         date = row[0]
         profit = int(row[1])
 
